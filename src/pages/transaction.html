@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <div class="row">
+        <div class="card transaction">
+            <div class="card-body">
+
+                <div class="form-group">
+                    <label for="comment">Block hash:</label>
+                    <textarea class="form-control" rows="2" id="blockHash" readonly></textarea>
+                    <br>
+                    <label for="comment">Signature hash:</label>
+                    <textarea class="form-control" rows="2" id="signatureHash" readonly></textarea>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend"><span class="input-group-text">From</span></div>
+                    <input type="text" class="form-control" id="from" readonly>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend"><span class="input-group-text">To</span></div>
+                    <input type="text" class="form-control" id="to" readonly>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend"><span class="input-group-text">Cost</span></div>
+                    <input type="text" class="form-control" id="cost" readonly>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}
+
+{% block foot %}
+<script type="text/javascript" src="/transaction.js"></script>
+{% endblock %}

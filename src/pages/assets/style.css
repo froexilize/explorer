@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+}
+body {
+    background: url(/assets/images/background.png) 100% 100% no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+}
+
+footer a {
+    color: #bbbbbb;
+}
+
+.navbar {
+    background-color: black;
+}
+.navbar a {
+    color: white;
+}
+
+
+.container {
+    margin: 20px auto;
+}
+
+.card.counter {
+    width: fit-content;
+    display: inline-block;
+    margin-right: 10px;
+
+    background-color: rebeccapurple;
+    color: white;
+}
+
+#table-container {
+	margin-top: 20px;
+    width: 100%;
+}
+
+#toHome {
+    opacity: 0.4;
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    color: #0f3312;
+    left: 10px;
+}
+#toHome:hover {
+    opacity: 0.7;
+}
+
+.input-group.offset {
+	width: 300px;
+}
+
+label {
+    font-weight: 500;
+}
+input, textarea {
+    background-color: #333333 !important;
+    color: white!important;
+    border-color: black !important;
+}
+
+.card.transaction {
+    width: 100%;
+    background-color: rebeccapurple;
+}
+.transaction .input-group-text {
+    background-color: #6d6d6d;
+    color: white;
+    border-color: black;
+}
+.transaction label {
+    color: black;
+}

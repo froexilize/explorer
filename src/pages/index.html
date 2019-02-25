@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <div class="row">
+        <div class="card counter">
+            <div class="card-body">
+                Blocks count: <span id="blocksCount">%</span>
+            </div>
+        </div>
+        <div class="card counter">
+            <div class="card-body">
+                Transactions count: <span id="transactionsCount">%</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card" id="table-container">
+        </div>
+    </div>
+    <div class="row" style="display: none;">
+        <div class="input-group mb-3 offset">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Offset</span>
+            </div>
+            <input type="number" class="form-control" aria-label="Offset" min=0 value=0 step=10>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block foot %}
+<script type="text/javascript" src="/index.js"></script>
+{% endblock %}

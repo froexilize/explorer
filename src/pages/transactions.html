@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <div class="row">
+        <div class="card counter">
+            <div class="card-body" style="width: 620px;">
+                <div class="form-group">
+                    <label for="comment">Current hash:</label>
+                    <textarea class="form-control" rows="4" id="hashInfo" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card" id="table-container">
+        </div>
+    </div>
+    <div class="row" style="display: none;">
+        <div class="input-group mb-3 offset">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Offset</span>
+            </div>
+            <input type="number" class="form-control" aria-label="Offset" min=0 value=0 step=10>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block foot %}
+<script type="text/javascript" src="/transactions.js"></script>
+{% endblock %}

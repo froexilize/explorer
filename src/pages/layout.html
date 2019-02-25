@@ -1,0 +1,63 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="description" content="Rasmart">
+    <script type="text/javascript" src="/assets/jquery/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/tabulator/css/tabulator_midnight.min.css">
+    <script type="text/javascript" src="/assets/tabulator/js/tabulator.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0">
+            <a class="navbar-brand" href="/"><img src="/assets/images/logo.png" alt="logo"></a>
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Ra-Smart"><i class="fab fa-github"></i> GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://rasmartdocs.readthedocs.io/en/latest/index.html?"><i class="far fa-file-alt"></i> API Docs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://rasmart.io/download/"><i class="fas fa-download"></i> Join TestNet</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-envelope"></i> Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://en.rasmart.io/profile"><i class="fas fa-external-link-square-alt"></i> Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block body %}{% endblock %}
+
+
+    {% block foot %}{% endblock %}
+
+    <footer class="footer mt-auto py-3 w-100">
+      <div class="container">
+        <span class="text-muted"><a href="https://medium.com/rasmart">Medium</a> - <a href="https://www.facebook.com/rasmartblockchain/">Facebook</a> - <a href="https://twitter.com/rasmart_io">Twitter</a></span>
+      </div>
+    </footer>
+
+</body>
+</html>
